@@ -1,13 +1,12 @@
 
-import { Router } from 'react-router';
 
-function App(){
+export default function App() {
 
 
     return (
-       <div>
-        oiii
-       </div>
+        <div className="container">
+            aqui..
+        </div>
     );
 
 }
