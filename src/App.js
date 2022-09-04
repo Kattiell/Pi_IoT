@@ -1,11 +1,23 @@
-
+import './App.css';
 
 export default function App() {
 
 
     return (
         <div className="container">
-            aqui..
+            <header className="header">
+                <div className="header-buttons">
+
+                    <button>
+                        Cadastre-se
+                    </button>
+
+                    <button>
+                        Entrar
+                    </button>
+                    
+                </div>
+            </header>
         </div>
     );
 
