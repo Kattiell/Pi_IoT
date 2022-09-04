@@ -5,12 +5,9 @@ function App(){
 
 
     return (
-        <Router>
-
-
-
-
-        </Router>
+       <div>
+        oiii
+       </div>
     );
 
 }
