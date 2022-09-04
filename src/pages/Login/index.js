@@ -1,10 +1,9 @@
-import React from 'react';
-import { View } from 'react-native';
 
-import { Container } from './syles';
 
 export default function Login() {
- return (
-   <Container/>
-  );
+    return (
+        <div>
+            aqui tu se loga
+        </div>
+    );
 }
