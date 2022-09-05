@@ -1,0 +1,21 @@
+/*
+
+    Esse estilo é um aqruivo/modulo css local, específico para o componente dessa pasta,
+    para acessar suas classes e ids definidos nesse arquivo/módulo css é necessário usar 
+    notação de objeto.
+
+    Exemplo:
+
+    em styles.module.css (este arquivo/módulo)
+
+    .container{
+        background-color: red;
+    }
+
+    em index.js
+
+        import styles from './styles.module.css; (módulos css precisam ser importados) 
+
+        <div className={styles.container}> Estilos locais estão sendo aplicados aqui.. </div>
+
+*/

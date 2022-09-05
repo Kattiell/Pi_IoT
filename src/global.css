@@ -1,0 +1,22 @@
+/*
+
+    Esses estilos globais e estão sendo importados a partir de src/index.js
+    Todos estilos definidos aqui podem ser chamados por nome em qualquer componente do projeto,
+    sem a necessidade de importar nada nem usar notação de objeto.
+
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-style: none;
+    font-family: 'Fira Sans';
+}
+
+
+
+/* 
+    useful colors: #15392D | #91D847 and #FFD664
+*/
