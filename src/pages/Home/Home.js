@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <header>
+            <header className={styles.header}>
                 <div>
                     <h1>atumalaca</h1>
                 </div>
