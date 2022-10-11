@@ -11,6 +11,10 @@
     height: 100vh;
     background-image: url(./Assets/background.jpg);
     clip-path: polygon(43% 0, 100% 0, 100% 100%, 27% 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transform: scale(0.99px);
 
 }
 
