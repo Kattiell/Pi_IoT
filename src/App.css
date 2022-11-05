@@ -29,7 +29,7 @@
 .text h1,
 h2 {
     top: 160px;
-    left: 20px;
+    left: 40px;
     display: flex;
     text-align: left;
     margin-left: 3%;
@@ -77,8 +77,8 @@ h2 {
     float: left;
     margin-left: 3%;
     position: relative;
-    top: 210px;
-    left: 20px;
+    top: 190px;
+    left: 40px;
 
 }
 

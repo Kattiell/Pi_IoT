@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index1.css";
+import "./index_cadastro.css";
 
 import { MdEmail, MdLock, MdOutlinePeopleAlt, MdOutlineRoofing } from "react-icons/md";
 import { HiEye, HiEyeOff } from "react-icons/hi";
