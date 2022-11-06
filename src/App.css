@@ -1,89 +1,83 @@
 * {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    border-style: none;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-style: none;
+  text-decoration: none;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./Assets/background.jpg);
-    clip-path: polygon(43% 0, 100% 0, 100% 100%, 27% 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    transform: scale(0.99px);
-
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Assets/background.jpg);
+  clip-path: polygon(43% 0, 100% 0, 100% 100%, 27% 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  transform: scale(0.99px);
 }
 
 .container2 {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
-.absoluta{
-    position: absolute;
+.absoluta {
+  position: absolute;
 }
 
 .text h1,
 h2 {
-    top: 160px;
-    left: 40px;
-    display: flex;
-    text-align: left;
-    margin-left: 3%;
-    position: relative;
-    text-align: left;
-    
+  top: 160px;
+  left: 40px;
+  display: flex;
+  text-align: left;
+  margin-left: 3%;
+  position: relative;
+  text-align: left;
 }
 
-.text h1{
-    color: #1D4D16;
-    font-size: 56px;
-    
+.text h1 {
+  color: #1d4d16;
+  font-size: 56px;
 }
 .text h2 {
-    color: #000000;
-    font-size: 36px;
+  color: #000000;
+  font-size: 36px;
 }
 
-.link{
-    color: #ffffff;
-    font-size: 36;
+.link {
+  color: #ffffff;
+  font-size: 36;
 }
- .header {
-    width: 100%;
-    height: 100%;
-} 
+.header {
+  width: 100%;
+  height: 100%;
+}
 
- .header-buttons {
-    
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    font-size: 36;
-} 
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 36;
+}
 
 .header-buttons button {
-
-    background-color: #1D4D16;
-    color: #ffffff;
-    border: 1px solid #1D4D16;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-    margin-left: 3%;
-    position: relative;
-    top: 190px;
-    left: 40px;
-
+  background-color: #1d4d16;
+  color: #ffffff;
+  border: 1px solid #1d4d16;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-left: 3%;
+  position: relative;
+  top: 190px;
+  left: 40px;
 }
 
 @media only screen and (max-width: 330px) {
-    div {
-        width: 250px;
-    }
-} 
+  div {
+    width: 250px;
+  }
+}

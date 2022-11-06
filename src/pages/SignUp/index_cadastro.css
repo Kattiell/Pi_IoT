@@ -167,3 +167,16 @@
     cursor: pointer;
     margin-right: 10px;
 }
+
+
+/* 
+     NÃO ESCREVER MAIS -> NENHUM <- CSS AQUI, AO INVÉS USE CSS EM MÓDULOS
+
+     Dentro da pasta do componente/página, crie um arquivo chamado:
+     styles.module.css. Dentro do componente importe dessa forma
+     import styles from "./styles.module.css";
+
+     Assim o css de um componente/página não corre o risco de entrar 
+     em conflito com outros, além de organizar melhor os estilos
+
+*/
