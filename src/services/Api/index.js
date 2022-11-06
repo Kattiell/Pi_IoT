@@ -1,5 +1,4 @@
-import axios from "axios"
-//import * as dotnev from 'dotenv';
+import axios from "axios";
 
 const api = axios.create({
     baseURL: process.env.REACT_APP_PUBLIC_URL,
