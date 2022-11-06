@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./index.css";
-
+import "./index_login.css";
+import styles from './styles.module.css';
 import { MdEmail, MdLock } from "react-icons/md";
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
@@ -17,15 +17,16 @@ export default function Login() {
   return (
     <div className="login">
       <div className="login-logo">
-        <img
+        {/* <img
           src="https://st4.depositphotos.com/8186828/23886/v/450/depositphotos_238865988-stock-illustration-farm-vector-logo-agro-emblem.jpg"
           alt="MdLockLogin App"
-        />
+        /> */}
       </div>
       <div className="login-right">
-        <h1>Efetuar Login</h1>
+        <h1>Login</h1>
         
-          <img src="https://media.istockphoto.com/vectors/green-agro-icon-vector-id1167533705?k=20&m=1167533705&s=170667a&w=0&h=lxnygeEpIA8yQl0SCAtNF7uf8eBU4vKdg0VGMp3rR54="></img>
+        {/* Essa imagem está sobrepondo ao tútulo Login */}
+        {/* <img src="https://media.istockphoto.com/vectors/green-agro-icon-vector-id1167533705?k=20&m=1167533705&s=170667a&w=0&h=lxnygeEpIA8yQl0SCAtNF7uf8eBU4vKdg0VGMp3rR54="></img> */}
 
         <div className="login-loginInputEmail">
           <MdEmail />
@@ -60,7 +61,7 @@ export default function Login() {
 
         <button type="submit">Cadastre-se</button>
 
-        <h4>Esqueceu senha.</h4>
+        <h4 className={styles["teste"]} id={styles["teste2"]}> Esqueceu senha.</h4>
       </div>
     </div>
   );

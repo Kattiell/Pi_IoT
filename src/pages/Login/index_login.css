@@ -1,23 +1,29 @@
-.SignUp {
+*{ /*formatacao geral*/
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
-    /* background-image: url(../../Assets/teste1.jpg); */
-    background-color: #121214;
+    background-image: url(../../Assets/teste1.jpg);
     color: white;
     margin-bottom: 20px;
 }
 
-.SignUp-logo img {
+.login-logo img {
     width: 434px;
     height: 432px;
-    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 120%);
+    
 }
 
 
-.SignUp-right img {
+.login-right img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
@@ -25,17 +31,17 @@
     font-weight: bold;
     width: 80px;
     position: absolute;
-    left: 58%;
-    top:  23.3%;
+    left: 44%;
+    top:  28.3%;
     margin-left: -110px;
     margin-top: -40px;
     margin-bottom: 20px;
 }
 
 
-.SignUp-right {
+.login-right {
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +54,7 @@
 
 }
 
-.SignUp-right h1 {
+.login-right h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
@@ -58,7 +64,7 @@
     margin-bottom: 35px;
 }
 
-.SignUp-right h4 {
+.login-right h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     margin-top: 20px;
@@ -68,7 +74,7 @@
     text-align: left;
 }
 
-.SignUp-SignUpInputEmail {
+.login-loginInputEmail {
     display: flex;
     align-items: center;
     color: #1D4D16;
@@ -80,18 +86,17 @@
     width: 88%;
     height: 50px;
     margin-bottom: 3%;
-    border-width: medium;
 
 
 }
 
-.SignUp-SignUpInputEmail svg {
+.login-loginInputEmail svg {
     margin-left: 10px;
     font-size: 25px;
 
 }
 
-.SignUp-SignUpInputEmail input {
+.login-loginInputEmail input {
     background: transparent;
     width: 100%;
     outline-width: 0;
@@ -100,11 +105,10 @@
     font-size: 17px;
     margin-left: 10px;
     margin-right: 10px;
-      border-width: medium;
 }
 
 
-.SignUp-SignUpInputPassword {
+.login-loginInputPassword {
     display: flex;
     align-items: center;
     color: #1D4D16;
@@ -112,7 +116,6 @@
     border-radius: 3px;
     border-color: #121214;
     border-style: solid;
-    border-width: medium;
     padding: 3px;
     margin: 5px;
     width: 88%;
@@ -123,12 +126,12 @@
 
 }
 
-.SignUp-SignUpInputPassword svg {
+.login-loginInputPassword svg {
     margin-left: 10px;
     font-size: 25px;
 }
 
-.SignUp-SignUpInputPassword input {
+.login-loginInputPassword input {
     background: transparent;
     width: 100%;
     outline-width: 0;
@@ -139,7 +142,7 @@
     margin-right: 10px;
 }
 
-.SignUp-right button {
+.login-right button {
     width: 88%;
     background-color: #1D4D16;
     color: #EFF2F5;
@@ -153,17 +156,34 @@
     outline-width: 0;
 }
 
-.SignUp-right button:hover {
+.login-right button:hover {
     background-color: #1D5900;
     color: #EFF2F5;
     cursor: pointer;
 
 }
 
-.SignUp-eye {
+.login-eye {
     align-items: center;
     justify-content: center;
     font-size: 30;
     cursor: pointer;
     margin-right: 10px;
 }
+
+.teste{
+    background-color: purple !important;
+}
+
+
+/* 
+     NÃO ESCREVER MAIS NENHUM CSS AQUI, AO INVÉS USE CSS EM MÓDULOS
+
+     Dentro da pasta do componente/página, crie um arquivo chamado
+     styles.module.css. Dentro do componente importe dessa forma
+     import styles from "./styles.module.css";
+
+     Assim o css de um componente/página não corre o risco de entrar 
+     em conflito com outros, além de organizar melhor os estilos
+
+*/
