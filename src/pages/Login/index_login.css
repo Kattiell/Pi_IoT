@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .login {
     display: flex;
     align-items: center;
@@ -12,15 +11,12 @@
     height: 100vh;
     width: 100%;
     background-image: url(../../Assets/teste1.jpg);
+    background-size: 100% 100%;
     color: white;
-    margin-bottom: 20px;
+    overflow: hidden;
+    filter: invert(0%) sepia(4%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(80%);
 }
 
-.login-logo img {
-    width: 434px;
-    height: 432px;
-    
-}
 
 
 .login-right img {
@@ -72,6 +68,9 @@
     font-weight: 500;
     color: #121214;
     text-align: left;
+    align-items: flex-start;
+    display: flex;
+    position:relative;
 }
 
 .login-loginInputEmail {
@@ -80,7 +79,7 @@
     color: #1D4D16;
     background-color: #f9f9f9;
     border-radius: 15px;
-    border-color: #121214;
+    border-color: #1D4D16;
     border-style: solid;
     padding: 3px;
     width: 88%;
@@ -114,7 +113,7 @@
     color: #1D4D16;
     background-color: #f9f9f9;
     border-radius: 3px;
-    border-color: #121214;
+    border-color: #1D4D16;
     border-style: solid;
     padding: 3px;
     margin: 5px;

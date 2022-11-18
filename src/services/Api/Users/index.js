@@ -1,4 +1,4 @@
-import SignUp from "../../../pages/SignUp";
+
 import { ToastError, ToastSucess } from "../../Toast";
 import api from './../../Api/index';
 
