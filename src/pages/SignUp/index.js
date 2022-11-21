@@ -11,8 +11,12 @@ import { HiEye, HiEyeOff } from "react-icons/hi";
 import ChangeInputValue from "../../services/Inputs/ChangeInputValue";
 import { ToastError, ToastInfo, ToastSucess } from "../../services/Toast";
 import { CadastrarUsuario } from "../../services/Api/Users";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+
+  const navigate = useNavigate();
+
   const [show, setShow] = useState(false);
 
   const nomeInput = useRef('');
@@ -83,7 +87,7 @@ export default function SignUp() {
         <button
           type="submit"
           onClick={() => {
-            CadastrarUsuario(nomeInput.current.value, emailInput.current.value, passwordInput.current.value, nomeFazendaInput.current.value);
+            CadastrarUsuario(nomeInput.current.value, emailInput.current.value, passwordInput.current.value, nomeFazendaInput.current.value, navigate);
           }}
         >
           Criar Conta

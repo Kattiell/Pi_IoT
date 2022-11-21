@@ -5,6 +5,7 @@
   border-style: none;
   text-decoration: none;
 }
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 
 .container {
   width: 100%;
@@ -13,9 +14,11 @@
   clip-path: polygon(43% 0, 100% 0, 100% 100%, 27% 100%);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   object-fit: contain;
   transform: scale(0.99px);
-  filter: invert(0%) sepia(4%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(80%);
+  filter: invert(0%) sepia(4%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(80%);
 }
 
 .container2 {
@@ -26,24 +29,33 @@
   position: absolute;
 }
 
-.text h1,
-h2 {
+.text {
+  width: 500px;
+  position: relative;
   top: 160px;
   left: 40px;
+}
+
+.text h1,
+.text h2 {
   display: flex;
   text-align: left;
   margin-left: 3%;
   position: relative;
   text-align: left;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: bolder !important;
+  word-wrap: nowrap;
 }
 
 .text h1 {
   color: #1d4d16;
-  font-size: 56px;
+  font-size: 40px;
+  font-weight: bolder;
 }
 .text h2 {
   color: #000000;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .link {
