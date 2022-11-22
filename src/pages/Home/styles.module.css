@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.homeContainer {
+  max-width: calc(100% - 98px);
+  width: 100%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 15px 25px;
+}
+
+header:first-child {
+  color: #1b7837;
+}
+
+main {
+  max-width: 100%;
+  
+}
+
+main:first-child > :first-child{
+    overflow-x: scroll;
+}
+

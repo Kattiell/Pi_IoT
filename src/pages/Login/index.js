@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./index_login.css";
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 import { MdEmail, MdLock } from "react-icons/md";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
+import { LoginUsuario } from "../../services/Api/Users";
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState(null);
   const [show, setShow] = useState(false);
 
   const handleClick = (e) => {
@@ -24,7 +28,7 @@ export default function Login() {
       </div>
       <div className="login-right">
         <h1>Login</h1>
-        
+
         {/* Essa imagem está sobrepondo ao tútulo Login */}
         {/* <img src="https://media.istockphoto.com/vectors/green-agro-icon-vector-id1167533705?k=20&m=1167533705&s=170667a&w=0&h=lxnygeEpIA8yQl0SCAtNF7uf8eBU4vKdg0VGMp3rR54="></img> */}
 
@@ -55,15 +59,31 @@ export default function Login() {
           </div>
         </div>
 
-        <button type="submit">Entrar</button>
+        <button
+          onClick={() => {
+            LoginUsuario(email, password);
+          }}
+          type="submit"
+        >
+          Entrar
+        </button>
 
         <h4>Não possui uma conta?</h4>
 
-        <button type="submit">Cadastre-se</button>
+        <button
+          onClick={() => {
+            navigate("/cadastre-se");
+          }}
+          type="submit"
+        >
+          Cadastre-se
+        </button>
 
-        <h4 className={styles["teste"]} id={styles["teste2"]}> Esqueceu senha.</h4>
+        <h4 className={styles["teste"]} id={styles["teste2"]}>
+          {" "}
+          Esqueceu senha.
+        </h4>
       </div>
-      
     </div>
   );
 }

@@ -1,32 +1,37 @@
-import { Link } from "react-router-dom";
 import "./App.css";
-import Login from "./pages/Login";
-import SingUp from "./pages/SignUp";
-import Suporte from "./pages/Suporte";
+import { useNavigate } from "react-router-dom";
 
 export default function App() {
+  const navigate = useNavigate();
+
   return (
     <div className="container2">
       <div className="absoluta">
         <div className="text">
           <h1>AGROTECH</h1>
-          <h2>Soluções agrárias,</h2>
-          <h2>sempre ao lado de </h2>
-          <h2>quem produz</h2>
+          <h2>
+            Soluções agrárias, <br></br>
+            sempre ao lado de <br></br>
+            quem produz
+          </h2>
         </div>
 
         <div className="header-buttons">
-        <button onClick={Login}>
-            <Link className="link" to="/Login">Login</Link>
+          <button
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Login
           </button>
 
-          <button onClick={SingUp}>
-            <Link className="link" to="/cadastre-se">Cadastre-se</Link>
-          </button>   
-           
-          <button onClick={Suporte}>
-            <Link className="link" to="/suporte">Suporte</Link>
-          </button> 
+          <button
+            onClick={() => {
+              navigate("/cadastre-se");
+            }}
+          >
+            Cadastre-se
+          </button>
         </div>
       </div>
       <div className="container"></div>
