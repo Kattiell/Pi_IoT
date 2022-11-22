@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Login from "./pages/Login/index";
 import SignUp from "./pages/SignUp/index";
+import Suporte from "./pages/Suporte/index";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,6 +24,7 @@ root.render(
         <Route path="/" element={<App />} /> {/* Página inicial da aplicação */}
         <Route path="/Login" element={<Login />} />
         <Route path="/cadastre-se" element={<SignUp />} />
+        <Route path="/suporte" element={<Suporte />} />
       </Routes>
     </BrowserRouter>
     <ToastContainer/>

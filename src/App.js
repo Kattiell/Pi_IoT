@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/Login";
 import SingUp from "./pages/SignUp";
+import Suporte from "./pages/Suporte";
 
 export default function App() {
   return (
@@ -21,7 +22,11 @@ export default function App() {
 
           <button onClick={SingUp}>
             <Link className="link" to="/cadastre-se">Cadastre-se</Link>
-          </button>  
+          </button>   
+           
+          <button onClick={Suporte}>
+            <Link className="link" to="/suporte">Suporte</Link>
+          </button> 
         </div>
       </div>
       <div className="container"></div>
