@@ -30,11 +30,13 @@ export async function LoginUsuario(email, password){
             password: password, 
         });
 
-        ToastSucess("Logado com sucesso!"); 
+        ToastSucess("Logado com sucesso!");
+        return true;
 
     } catch (error) {
         console.log(error);
         ToastError("Falha no login, verifique suas credenciais.");
+        return false;
     }
 
 }
@@ -43,7 +45,7 @@ export async function IsUserLogged(){
 
     try {
         const response = await api.get('user/isLogged');
-        console.log(response);
+        return response.data.data;
 
     } catch (error) {
         ToastError("Erro ao validar token.");

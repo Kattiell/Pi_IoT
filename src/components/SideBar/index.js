@@ -16,14 +16,14 @@ export default function SideBar({ backgroundColor, colorIcons }) {
         style={{ cursor: "pointer" }}
         color={colorIcons}
         size={35}
-        onClick={() => { }}
+        onClick={() => { navigate('/home') }}
       ></ImHome>
 
       <FaHistory
         style={{ cursor: "pointer" }}
         color={colorIcons}
         size={35}
-        onClick={() => {}}
+        onClick={() => { navigate('/historico') }}
       ></FaHistory>
 
       <MdSupportAgent
@@ -37,7 +37,10 @@ export default function SideBar({ backgroundColor, colorIcons }) {
         style={{ cursor: "pointer" }}
         color={colorIcons}
         size={40}
-        onClick={() => {}}
+        onClick={() => {
+          navigate('/login');
+          document.cookie = "AgroTechAuthorization=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }}
       ></BiLogOut>
     </div>
   );
