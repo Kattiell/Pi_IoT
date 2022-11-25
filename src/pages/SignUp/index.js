@@ -87,7 +87,7 @@ export default function SignUp() {
         <button
           type="submit"
           onClick={() => {
-            CadastrarUsuario(nomeInput.current.value, emailInput.current.value, passwordInput.current.value, nomeFazendaInput.current.value, navigate);
+            CadastrarUsuario(nomeInput.current.value, emailInput.current.value, passwordInput.current.value, nomeFazendaInput.current.value, navigate("/login"));
           }}
         >
           Criar Conta
