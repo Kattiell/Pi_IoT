@@ -27,7 +27,6 @@
 .login-logo img {
     width: 434px;
     height: 432px;
-    
 }
 
 
@@ -83,7 +82,6 @@
     height: 220px;
     margin-bottom: 50px;
     margin-top: 40px;
-
 }
 
 .contato h1 {
@@ -128,8 +126,6 @@
     width: 88%;
     height: 50px;
     margin-bottom: 3%;
-
-
 }
 
 .login-right button {
@@ -178,14 +174,12 @@
     background-color: #1D5900;
     color: #EFF2F5;
     cursor: pointer;
-
 }
 
 .contato button:hover {
     background-color: #1D5900;
     color: #EFF2F5;
     cursor: pointer;
-
 }
 
 .login-eye {
