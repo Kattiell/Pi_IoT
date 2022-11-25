@@ -60,8 +60,10 @@ export default function Login() {
         </div>
 
         <button
-          onClick={() => {
-            LoginUsuario(email, password);
+          onClick={async () => {
+            if(await LoginUsuario(email, password)){
+              navigate('/home');
+            }
           }}
           type="submit"
         >
