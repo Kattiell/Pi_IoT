@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
 .suporte {
     display: flex;

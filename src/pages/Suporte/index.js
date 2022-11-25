@@ -70,7 +70,7 @@ export default function Suporte() {
         </div>
         <div className="contato">
           <h1 style={{ marginTop:'5px'}}>Fala com o suporte</h1>
-          <p style={{marginLeft:'20px', marginBottom:'10px', marginTop:'-2px'}}>Estamos disponíveis também, através do nosso WhatsApp.</p>
+          <p style={{marginLeft:'20px', marginBottom:'10px', marginTop:'-2px'}}>Estamos disponíveis, também, através do nosso WhatsApp.</p>
           <p style={{marginRight:'95px', fontWeight:'600'}}>Seg - Sex: 6h - 20h</p>
           <p style={{marginRight:'90px', marginBottom:'10px', fontWeight:'600'}}>Sáb - Dom: 6h - 17h</p>
           <button type="submit"><a href={'https://api.whatsapp.com/send?phone=5534991408502'}><BsWhatsapp style={{ marginBottom:'-2px', marginRight:'5px'}}/> Clique aqui</a></button>

@@ -30,7 +30,9 @@ export default function SideBar({ backgroundColor, colorIcons }) {
         style={{ cursor: "pointer" }}
         color={colorIcons}
         size={40}
-        onClick={() => {}}
+        onClick={() => {
+          navigate("/suporte");
+        }}
       ></MdSupportAgent>
 
       <BiLogOut
