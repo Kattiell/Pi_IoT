@@ -10,7 +10,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Historico from "./pages/Historico";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
