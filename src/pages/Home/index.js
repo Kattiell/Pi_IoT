@@ -7,6 +7,8 @@ import axios from "axios";
 import api from "./../../services/Api/index";
 import { IsUserLogged } from "../../services/Api/Users";
 import { ToastError, ToastSucess, ToastInfo } from "../../services/Toast";
+import { TbDropletFilled } from "react-icons/tb";
+import { GiGrainBundle } from "react-icons/gi";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -238,6 +240,24 @@ export default function Home() {
             Coletas: <span style={{color:'yellow', fontSize:'22px', fontWeight:'bolder'}}>{count}</span>
           </h3>
         </div>
+        <div>
+            <div className={styles["imagem1"]}>
+              <div className={styles["contato"]}>
+                <h1><GiGrainBundle style={{ color: "#fff", width:"200px",height:"50px" }} /></h1>
+                <br/>
+                <h1>Irrigação</h1>
+                <p>Os sistemas de irrigação por gotejamento e por sulcos são indicados para solos argilo-arenosos e argilosos.  A gota d'água cai próxima às raízes das plantas, reduzindo o desperdício e elevando a eficiência.</p>
+              </div>
+            </div>
+            <div className={styles["imagem2"]}>
+              <div className={styles["contato"]}>
+                <h1><TbDropletFilled style={{ color: "#fff", width:"200px",height:"50px" }} /></h1>
+                <br/>
+                <h1>Gotejamento</h1>
+                <p>O gotejamento é a forma mais eficiente de fornecer água e nutrientes as plantas porque entrega as quantidades ideais de acordo com as fases do seu cultivo, no momento certo e diretamente na raiz da planta.</p>
+              </div>
+            </div>
+          </div>
       </div>
     )
   );
