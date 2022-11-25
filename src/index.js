@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import Login from "./pages/Login/index";
 import SignUp from "./pages/SignUp/index";
+import Suporte from "./pages/Suporte/index";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Historico from "./pages/Historico";
-
 
 const router = createBrowserRouter([
   {
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home/>
+  },
+  {
+    path: "/suporte",
+    element: <Suporte/>
   },
   {
     path: "/historico",
